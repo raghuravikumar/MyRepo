@@ -1,45 +1,45 @@
-package com.cisco.cjp.org.management.web;
+// package com.cisco.cjp.org.management.web;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+// import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
+// import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+// import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+// import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+// import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+// import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+// import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import javax.servlet.http.HttpServletRequest;
+// import javax.servlet.http.HttpServletRequest;
 
-import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.ui.Model;
+// import org.junit.Test;
+// import org.junit.runner.RunWith;
+// import org.mockito.Mock;
+// import org.springframework.beans.factory.annotation.Autowired;
+// import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+// import org.springframework.boot.test.mock.mockito.MockBean;
+// import org.springframework.test.context.junit4.SpringRunner;
+// import org.springframework.test.web.servlet.MockMvc;
+// import org.springframework.ui.Model;
 
-import static org.hamcrest.CoreMatchers.is;
-import static org.mockito.BDDMockito.given;
-import com.cisco.cjp.org.management.pojo.Tenant;
-import com.cisco.cjp.org.management.service.RestfulService;
+// import static org.hamcrest.CoreMatchers.is;
+// import static org.mockito.BDDMockito.given;
+// import com.cisco.cjp.org.management.pojo.Tenant;
+// import com.cisco.cjp.org.management.service.RestfulService;
 
-@RunWith(SpringRunner.class)
-@WebMvcTest(controllers = RestfulController.class)
-public class RestfulControllerTest {
+// @RunWith(SpringRunner.class)
+// @WebMvcTest(controllers = RestfulController.class)
+// public class RestfulControllerTest {
 
-	@Mock
-	private HttpServletRequest request;
+// 	@Mock
+// 	private HttpServletRequest request;
 
-	@Mock
-	private Model model;
+// 	@Mock
+// 	private Model model;
 
-	@Autowired
-	private MockMvc mockMvc;
+// 	@Autowired
+// 	private MockMvc mockMvc;
 
-	@MockBean
-	private RestfulService service;
+// 	@MockBean
+// 	private RestfulService service;
 
 // 	@Test
 // 	public void shouldReturnTenant() throws Exception {
@@ -72,4 +72,4 @@ public class RestfulControllerTest {
 // 				.andExpect(status().is2xxSuccessful());
 // 	}
 
-}
+// }
