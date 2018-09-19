@@ -1,6 +1,11 @@
 node{
     stage('scm checkout'){
         
-        git ''
+        git 'https://github.com/raghuravikumar/MyRepo.git'
+    }
+    
+    stage('compile-package'){
+        
+        sh 'mvn package'
     }
 }
