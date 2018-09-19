@@ -6,7 +6,7 @@ node{
     
     stage('compile-package'){
         
-        sh 'mvn -f org-management/pom.xml package'
+        sh 'mvn -f org-management/pom.xml package -DskipTests'
         
     }
     
