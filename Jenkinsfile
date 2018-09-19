@@ -6,6 +6,7 @@ node{
     
     stage('compile-package'){
         
-        sh 'mvn package'
+        sh 'mvn -f org-management/pom.xml package'
+        
     }
 }
