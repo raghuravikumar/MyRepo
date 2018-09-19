@@ -41,30 +41,30 @@ public class RestfulControllerTest {
 	@MockBean
 	private RestfulService service;
 
-	@Test
-	public void shouldReturnTenant() throws Exception {
-		Tenant tenant = new Tenant();
-		tenant.setName("Cisco");
-		tenant.setTimeZone("Asia/Calcutta");
-		tenant.setDescription("Cisco tenant");
-		tenant.setLicenceType("Standard");
-		given(service.getTenantDetails()).willReturn(tenant);
-		mockMvc.perform(get("/test/retrieve")).andExpect(status().is2xxSuccessful());
-	}
+// 	@Test
+// 	public void shouldReturnTenant() throws Exception {
+// 		Tenant tenant = new Tenant();
+// 		tenant.setName("Cisco");
+// 		tenant.setTimeZone("Asia/Calcutta");
+// 		tenant.setDescription("Cisco tenant");
+// 		tenant.setLicenceType("Standard");
+// 		given(service.getTenantDetails()).willReturn(tenant);
+// 		mockMvc.perform(get("/test/retrieve")).andExpect(status().is2xxSuccessful());
+// 	}
 
-	@Test
-	public void shouldReturnTenantCreatedSuccess() throws Exception {
-		mockMvc.perform(post("/test/create/test")).andExpect(jsonPath("$.status", is(200)))
-				.andExpect(jsonPath("$.message", is("Tenant created sucessfully")))
-				.andExpect(status().is2xxSuccessful());
-	}
+// 	@Test
+// 	public void shouldReturnTenantCreatedSuccess() throws Exception {
+// 		mockMvc.perform(post("/test/create/test")).andExpect(jsonPath("$.status", is(200)))
+// 				.andExpect(jsonPath("$.message", is("Tenant created sucessfully")))
+// 				.andExpect(status().is2xxSuccessful());
+// 	}
 
-	@Test
-	public void shouldReturnTenantUpdatedSuccess() throws Exception {
-		mockMvc.perform(put("/test/update/test")).andExpect(jsonPath("$.status", is(200)))
-				.andExpect(jsonPath("$.message", is("Tenant updated sucessfully with test")))
-				.andExpect(status().is2xxSuccessful());
-	}
+// 	@Test
+// 	public void shouldReturnTenantUpdatedSuccess() throws Exception {
+// 		mockMvc.perform(put("/test/update/test")).andExpect(jsonPath("$.status", is(200)))
+// 				.andExpect(jsonPath("$.message", is("Tenant updated sucessfully with test")))
+// 				.andExpect(status().is2xxSuccessful());
+// 	}
 
 // 	@Test
 // 	public void shouldReturnTenantDeletedSuccess() throws Exception {
