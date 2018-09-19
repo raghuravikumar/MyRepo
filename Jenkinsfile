@@ -1,7 +1,7 @@
 node{
     stage('scm checkout'){
         
-        git 'https://github.com/raghuravikumar/MyRepo.git/org-management'
+        git 'https://github.com/raghuravikumar/MyRepo.git'
     }
     
     stage('compile-package'){
