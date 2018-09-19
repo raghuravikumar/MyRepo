@@ -66,10 +66,10 @@ public class RestfulControllerTest {
 				.andExpect(status().is2xxSuccessful());
 	}
 
-	@Test
-	public void shouldReturnTenantDeletedSuccess() throws Exception {
-		mockMvc.perform(delete("/test/delete")).andExpect(content().string("Tenant deleted sucessfully"))
-				.andExpect(status().is2xxSuccessful());
-	}
+// 	@Test
+// 	public void shouldReturnTenantDeletedSuccess() throws Exception {
+// 		mockMvc.perform(delete("/test/delete")).andExpect(content().string("Tenant deleted sucessfully"))
+// 				.andExpect(status().is2xxSuccessful());
+// 	}
 
 }
