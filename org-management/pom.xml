@@ -129,6 +129,11 @@
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.4.0.905</version>
             </plugin>
+			<plugin>
+<groupId>org.codehaus.mojo</groupId>
+<artifactId>findbugs-maven-plugin</artifactId>
+<version>3.0.4</version> <!-- using latest from maven central, feel free to use any specific -->
+</plugin>
 		</plugins>
 	</build>
 	<reporting>
@@ -136,7 +141,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>3.0.6-SNAPSHOT</version>
+        <version>3.0.4</version>
         <configuration>
           <!-- Optional directory to put findbugs xml report -->
         </configuration>
