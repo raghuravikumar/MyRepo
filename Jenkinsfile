@@ -13,4 +13,8 @@ node{
         
     }
     
+    stage('findbug'){
+        sh 'mvn -f org-management/pom.xml  test package site'
+    }
+    
 }
