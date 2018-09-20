@@ -1,4 +1,7 @@
 node{
+    
+    // Wipe the workspace so we are building completely clean
+    deleteDir()
     stage('scm checkout'){
         
         git 'https://github.com/raghuravikumar/MyRepo.git'
@@ -17,12 +20,4 @@ node{
     }
   }
     
-    stage("Quality Gate"){
-          timeout(time: 1, unit: 'MINUTES') {
-              def qg = waitForQualityGate()
-              if (qg.status != 'OK') {
-                  error "Pipeline aborted due to quality gate failure: ${qg.status}"
-              }
-          }
-        }  
 }
