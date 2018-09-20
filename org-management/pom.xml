@@ -59,6 +59,13 @@
 			<artifactId>jackson-dataformat-xml</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		
+		
+		<dependency>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>findbugs-maven-plugin</artifactId>
+			<version>3.0.4</version>
+		</dependency>
 
 		<!-- Swagger dependencies -->
 		<dependency>
