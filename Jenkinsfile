@@ -14,7 +14,7 @@ node{
     }
     
     stage('findbugs'){
-        sh 'mvn -f org-managenet/pom.xml clean compile findbugs:findbugs'
+        sh 'mvn -f org-management/pom.xml clean compile findbugs:findbugs'
     }
     
 }
