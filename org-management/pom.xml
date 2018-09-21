@@ -142,12 +142,7 @@
                 <artifactId>sonar-maven-plugin</artifactId>
                 <version>3.4.0.905</version>
             </plugin>
-			<plugin>
-<groupId>org.codehaus.mojo</groupId>
-<artifactId>findbugs-maven-plugin</artifactId> 
-<version>3.0.4</version> <!-- using latest from maven central, feel free to use any specific -->
-
-	</plugin>
+			
 <!-- 			newly added -->
 			<plugin>
          <groupId>org.codehaus.mojo</groupId>
