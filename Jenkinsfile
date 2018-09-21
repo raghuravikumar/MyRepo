@@ -23,6 +23,15 @@ node{
       sh 'mvn -f org-management/pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
     }
   } 
+    stage("Quality Gate"){
+          timeout(time: 1, unit: 'MINUTES') {
+              def qg = waitForQualityGate()
+              if (qg.status != 'OK') {
+                  error "Pipeline aborted due to quality gate failure: ${qg.status}"
+              }
+          }
+        }  
+
 
     
 }
