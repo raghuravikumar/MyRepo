@@ -183,7 +183,7 @@
          <!-- Optional directory to put findbugs xml report -->
 <!--        </configuration>
       </plugin>
-    </plugins> --> -->
+    </plugins> --> 
 		<plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
