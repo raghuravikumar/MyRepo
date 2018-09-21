@@ -25,5 +25,10 @@ public class RestfulServiceTest {
 		Tenant tenant = service.getTenantDetails();
 		assertThat(tenant.getName(), is("Cisco"));
 	}
+	@Test
+	public void shouldReturnTenant() {
+		Tenant tenant = service.getTenantDetails();
+		assertThat(tenant.getName(), is("Cisco"));
+}
 
 }
