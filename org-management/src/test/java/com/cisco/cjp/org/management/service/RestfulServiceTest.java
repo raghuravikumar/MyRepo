@@ -25,5 +25,12 @@ public class RestfulServiceTest {
 		Tenant tenant = service.getTenantDetails();
 		assertThat(tenant.getName(), is("Cisco"));
 	}
+	
+	public void dummyMethod1() {
+		//TODO
+	}
+	public void dummyMethod2() {
+		//TODO
+	}
 
 }
