@@ -14,6 +14,8 @@ import com.cisco.cjp.org.management.pojo.Tenant;
 public class RestfulServiceTest {
 
 	private RestfulService service;
+	private RestfulService service;private RestfulService service;
+	private RestfulService service;
 
 	@Before
 	public void setUp() throws Exception {
@@ -25,10 +27,5 @@ public class RestfulServiceTest {
 		Tenant tenant = service.getTenantDetails();
 		assertThat(tenant.getName(), is("Cisco"));
 	}
-	@Test
-	public void shouldReturnTenant() {
-		Tenant tenant = service.getTenantDetails();
-		assertThat(tenant.getName(), is("Cisco"));
-}
 
 }
