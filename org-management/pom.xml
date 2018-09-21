@@ -168,7 +168,7 @@
 			<plugin>
 <groupId>org.codehaus.mojo</groupId>
 <artifactId>findbugs-maven-plugin</artifactId> 
-<version>3.0.4</version> <!-- using latest from maven central, feel free to use any specific -->
+<version>3.0.4</version> --><!-- using latest from maven central, feel free to use any specific -->
 
 <!-- 	</plugin>
 		</plugins>
