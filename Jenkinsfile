@@ -24,6 +24,7 @@ node{
     }
   } 
     stage("Quality Gate"){
+        sh "sleep 10"
           timeout(time: 10, unit: 'MINUTES') {
               def qg = waitForQualityGate()
               if (qg.status != 'OK') {
