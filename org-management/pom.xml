@@ -199,6 +199,12 @@
                 <branchRate>90</branchRate>
                 <lineRate>80</lineRate>
               </regex>
+		    <regex>
+                <pattern>com.cisco.cjp.org.management.pojo.*</pattern>
+                <branchRate>90</branchRate>
+                <lineRate>80</lineRate>
+              </regex>
+		    
               <regex>
                 <pattern>com.cisco.cjp.org.management.*</pattern>
                 <branchRate>40</branchRate>
