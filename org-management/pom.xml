@@ -205,11 +205,11 @@
                 <lineRate>80</lineRate>
               </regex>
 		    
-              <regex>
+<!--               <regex>
                 <pattern>com.cisco.cjp.org.management.*</pattern>
                 <branchRate>40</branchRate>
                 <lineRate>30</lineRate>
-              </regex>
+              </regex> -->
             </regexes>
           </check>
         </configuration>
