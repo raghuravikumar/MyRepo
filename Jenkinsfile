@@ -13,25 +13,12 @@ node{
         
     }
     
-    stage('findbug'){
-        sh 'mvn -f org-management/pom.xml  test package site'
+    stage('analysis'){
+        
+        sh "mvn -f org-management/pom.xml clean package checkstyle:checkstyle findbugs:findbugs cobertura:cobertura pmd:pmd "
+        
     }
     
-    stage('SonarQube analysis') {
-    withSonarQubeEnv('My SonarQube Server') {
-      // requires SonarQube Scanner for Maven 3.2+
-      sh 'mvn -f org-management/pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
-    }
-  } 
-    stage("Quality Gate"){
-        sh "sleep 10"
-          timeout(time: 10, unit: 'MINUTES') {
-              def qg = waitForQualityGate()
-              if (qg.status != 'OK') {
-                  error "Pipeline aborted due to quality gate failure: ${qg.status}"
-              }
-          }
-        }  
 
 
     
