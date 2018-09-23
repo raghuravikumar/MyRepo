@@ -15,7 +15,7 @@ node{
     
     stage('analysis'){
         
-        sh "mvn -f org-management/pom.xml clean package checkstyle:checkstyle findbugs:findbugs cobertura:cobertura"
+        sh "mvn -f org-management/pom.xml clean package checkstyle:checkstyle findbugs:findbugs cobertura:check"
         
     }
     
