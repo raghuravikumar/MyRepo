@@ -191,7 +191,7 @@
             <haltOnFailure>true</haltOnFailure>
             <totalBranchRate>20</totalBranchRate>
             <totalLineRate>20</totalLineRate>
-            <packageLineRate>20</packageLineRate>
+<!--             <packageLineRate>20</packageLineRate> -->
             <packageBranchRate>20</packageBranchRate>
             <regexes>
 		    <regex>
