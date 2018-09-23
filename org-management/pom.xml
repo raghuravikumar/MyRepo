@@ -194,7 +194,7 @@
             <packageLineRate>20</packageLineRate>
             <packageBranchRate>20</packageBranchRate>
             <regexes>
-              <regex>
+<!--               <regex>
                 <pattern>com.cisco.cjp.org.management.web.*</pattern>
                 <branchRate>90</branchRate>
                 <lineRate>80</lineRate>
@@ -203,7 +203,7 @@
                 <pattern>com.cisco.cjp.org.management.pojo.*</pattern>
                 <branchRate>90</branchRate>
                 <lineRate>80</lineRate>
-              </regex>
+              </regex> -->
 		    
 <!--               <regex>
                 <pattern>com.cisco.cjp.org.management.*</pattern>
