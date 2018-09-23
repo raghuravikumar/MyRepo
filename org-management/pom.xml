@@ -191,15 +191,15 @@
             <packageBranchRate>85</packageBranchRate>
             <regexes>
               <regex>
-                <pattern>com.example.reallyimportant.*</pattern>
+                <pattern>com.cisco.cjp.org.management.*</pattern>
                 <branchRate>90</branchRate>
                 <lineRate>80</lineRate>
               </regex>
-              <regex>
+<!--               <regex>
                 <pattern>com.example.boringcode.*</pattern>
                 <branchRate>40</branchRate>
                 <lineRate>30</lineRate>
-              </regex>
+              </regex> -->
             </regexes>
           </check>
         </configuration>
