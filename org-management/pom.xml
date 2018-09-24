@@ -218,6 +218,11 @@
               </regex> -->
             </regexes>
           </check>
+					<instrumentation>
+                    <excludes>
+                        <exclude>com/cisco/cjp/org/management/Application.class</exclude>
+                    </excludes>
+                </instrumentation>
         </configuration>
 				<executions>
           <execution>
