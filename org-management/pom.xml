@@ -199,14 +199,14 @@
                <branchRate>0</branchRate>
                 <lineRate>0</lineRate>
               </regex>
-		    com.cisco.cjp.org.management.pojo.ResultInfo
+		    
 		    
 <!--               <regex>
                 <pattern>com.cisco.cjp.org.management.web.*</pattern>
                 <branchRate>90</branchRate>
                 <lineRate>80</lineRate>
               </regex> -->
-		    Package com.cisco.cjp.org.management.config
+		    
 		    <regex>
                 <pattern>com.cisco.cjp.org.management.pojo.*</pattern>
                 <branchRate>90</branchRate>
@@ -223,7 +223,7 @@
 					<instrumentation>
                     <excludes>
                         <exclude>com/cisco/cjp/org/management/Application.class</exclude>
-			 <exclude>com/cisco/cjp/org/management/config.class</exclude>
+			    <exclude>com/cisco/cjp/org/management/config/*.class</exclude>
 			    
                     </excludes>
                 </instrumentation>
