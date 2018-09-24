@@ -274,7 +274,7 @@
         <version>3.0.0</version>
         <configuration>
 		<failOnError>false</failOnError>
-          <configLocation>checkstyle.xml</configLocation>
+          <configLocation>custom_sun_checks.xml</configLocation>
         </configuration>
       </plugin>
     </plugins>
