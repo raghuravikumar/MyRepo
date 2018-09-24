@@ -111,7 +111,7 @@
       </execution>
     </executions>
     <configuration>
-	    <configLocation>custom_sun_checks.xml</configLocation>
+	    <configLocation>checkstyle.xml</configLocation>
 
       
     </configuration>
@@ -274,7 +274,7 @@
         <version>3.0.0</version>
         <configuration>
 		
-          <configLocation>custom_sun_checks.xml</configLocation>
+          <configLocation>checkstyle.xml</configLocation>
         </configuration>
       </plugin>
     </plugins>
