@@ -186,13 +186,13 @@
                     <format>xml</format>
                 </formats>
           <check>
-            <branchRate>20</branchRate>
-            <lineRate>20</lineRate>
+            <branchRate>85</branchRate>
+            <lineRate>85</lineRate>
             <haltOnFailure>true</haltOnFailure>
-            <totalBranchRate>20</totalBranchRate>
-            <totalLineRate>20</totalLineRate>
-<!--             <packageLineRate>20</packageLineRate> -->
-            <packageBranchRate>20</packageBranchRate>
+            <totalBranchRate>85</totalBranchRate>
+            <totalLineRate>85</totalLineRate>
+            <packageLineRate>85</packageLineRate>
+            <packageBranchRate>85</packageBranchRate>
             <regexes>
 		    <regex>
                 <pattern>com.cisco.cjp.org.management.config.*</pattern>
