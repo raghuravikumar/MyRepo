@@ -195,7 +195,7 @@
             <packageBranchRate>80</packageBranchRate>
             <regexes>
 		    <regex>
-                <pattern>com.cisco.cjp.org.management.*</pattern>
+                <pattern>com.cisco.cjp.org.management.config.*</pattern>
                <branchRate>0</branchRate>
                 <lineRate>40</lineRate>
               </regex>
