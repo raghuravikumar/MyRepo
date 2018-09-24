@@ -111,6 +111,8 @@
       </execution>
     </executions>
     <configuration>
+	    <configLocation>checkstyle1.xml</configLocation>
+
       <failsOnError>true</failsOnError>
     </configuration>
   </plugin>
