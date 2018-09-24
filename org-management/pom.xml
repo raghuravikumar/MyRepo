@@ -111,7 +111,7 @@
       </execution>
     </executions>
     <configuration>
-	    <configLocation>checkstyle.xml</configLocation>
+	    <configLocation>../checkstyle.xml</configLocation>
 
       <failsOnError>true</failsOnError>
     </configuration>
