@@ -190,7 +190,7 @@
             <lineRate>85</lineRate>
             <haltOnFailure>true</haltOnFailure>
             <totalBranchRate>85</totalBranchRate>
-            <totalLineRate>85</totalLineRate>
+            <totalLineRate>70</totalLineRate>
             <packageLineRate>85</packageLineRate>
             <packageBranchRate>85</packageBranchRate>
             <regexes>
