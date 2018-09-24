@@ -112,7 +112,7 @@
     </executions>
     <configuration>
 	    <configLocation>checkstyle.xml</configLocation>
-
+<failOnError>false</failOnError>
       
     </configuration>
   </plugin>
@@ -273,7 +273,7 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-		
+		<failOnError>false</failOnError>
           <configLocation>checkstyle.xml</configLocation>
         </configuration>
       </plugin>
