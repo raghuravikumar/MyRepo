@@ -111,7 +111,7 @@
       </execution>
     </executions>
     <configuration>
-	    <configLocation>sun_checks.xml</configLocation>
+	    <configLocation>custom_sun_checks.xml</configLocation>
 
       
     </configuration>
@@ -273,8 +273,8 @@
         <artifactId>maven-checkstyle-plugin</artifactId>
         <version>3.0.0</version>
         <configuration>
-		<failsOnError>true</failsOnError>
-          <configLocation>sun_checks.xml</configLocation>
+		
+          <configLocation>custom_sun_checks.xml</configLocation>
         </configuration>
       </plugin>
     </plugins>
