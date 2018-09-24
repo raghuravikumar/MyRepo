@@ -111,7 +111,7 @@
       </execution>
     </executions>
     <configuration>
-	    <configLocation>checkstyle.xml</configLocation>
+	    <configLocation>custom_sun_checks.xml</configLocation>
 <failOnError>false</failOnError>
       
     </configuration>
