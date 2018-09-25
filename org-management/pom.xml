@@ -205,7 +205,7 @@
                     <format>html</format>
                     <format>xml</format>
                 </formats>
-          <check>
+<!--           <check>
             <branchRate>80</branchRate>
             <lineRate>80</lineRate>
             <haltOnFailure>true</haltOnFailure>
@@ -221,11 +221,11 @@
               </regex>
 		    
 		    
-<!--               <regex>
+             <regex>
                 <pattern>com.cisco.cjp.org.management.web.*</pattern>
                 <branchRate>90</branchRate>
                 <lineRate>80</lineRate>
-              </regex> -->
+              </regex>
 		    
 		    <regex>
                 <pattern>com.cisco.cjp.org.management.pojo.*</pattern>
@@ -233,29 +233,29 @@
                 <lineRate>50</lineRate>
               </regex>
 		    
-<!--               <regex>
+            <regex>
                 <pattern>com.cisco.cjp.org.management.*</pattern>
                 <branchRate>40</branchRate>
                 <lineRate>30</lineRate>
-              </regex> -->
+              </regex> 
             </regexes>
-          </check>
-					<instrumentation>
+          </check> -->
+<!-- 					<instrumentation>
                     <excludes>
                         <exclude>com/cisco/cjp/org/management/Application.class</exclude>
 			    <exclude>com/cisco/cjp/org/management/config/*.class</exclude>
 			    
                     </excludes>
-                </instrumentation>
+                </instrumentation> -->
         </configuration>
-				<executions>
+<!-- 				<executions>
           <execution>
             <goals>
               <goal>clean</goal>
               <goal>check</goal>
             </goals>
           </execution>
-        </executions>
+        </executions> -->
 <!--             <configuration>
                 <formats>
                     <format>html</format>
