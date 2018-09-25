@@ -1,0 +1,12 @@
+server:
+   port: 8081
+   
+spring:
+  datasource:
+    url: jdbc:mysql://db-tm-001.c6rbwapoba3o.us-west-2.rds.amazonaws.com:3306/dbtm001
+    username: transera
+    password: transera
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    hibernate: 
+      ddl-auto: none

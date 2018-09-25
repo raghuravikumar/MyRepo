@@ -1,0 +1,25 @@
+Local MySql DB setup:
+=========================================
+
+1). Install mysql and set path variable.
+----------------------------------------
+
+2). create Dataase:
+----------------------------
+create database dbtm001;
+
+3). Use Database:
+----------------------------
+use dbtm001;
+
+
+4: Create tables:
+----------------------------------------
+
+CREATE TABLE `organization` (
+  `org_id` varchar(255) NOT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `licence_type` varchar(255) DEFAULT NULL,
+  `time_zone` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`org_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
