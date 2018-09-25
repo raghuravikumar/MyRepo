@@ -15,7 +15,7 @@ node{
             stage('compile-package') {
                 for (project in utProjects) {
                     dir(project) {
-                        sh "'${mavenHome}/bin/mvn' clean test"
+                        sh "'${mavenHome}/bin/mvn' clean package"
                     }
                 }
             }
