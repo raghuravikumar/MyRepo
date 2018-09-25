@@ -19,13 +19,16 @@ node{
                     }
                 }
             }
-            stage('sonar-analysis') {
-                for (project in utProjects) {
+             stage('SonarQube analysis') {
+                    withSonarQubeEnv('My SonarQube Server') {
+                    for (project in utProjects) {
                     dir(project) {
                         sh "'${mavenHome}/bin/mvn' sonar:sonar"
-                    }
+                        }
+                     }
                 }
-            }
+            } 
+            
         }
     
 }
