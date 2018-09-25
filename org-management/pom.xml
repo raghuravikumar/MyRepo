@@ -19,7 +19,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<jacoco.version>0.7.5.201505241946</jacoco.version>
 		<dependency.locations.enabled>false</dependency.locations.enabled>
-		<sonar.exclusions>src/main/java/com/cisco/cjp/org/management/config/SwaggerConfig.java</sonar.exclusions>
+		<sonar.exclusions>src/main/java/com/cisco/cjp/org/management/config/SwaggerConfig.java,src/main/java/com/cisco/cjp/org/management/Application.java</sonar.exclusions>
 	</properties>
 	
 	
