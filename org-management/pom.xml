@@ -19,8 +19,10 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<jacoco.version>0.7.5.201505241946</jacoco.version>
 		<dependency.locations.enabled>false</dependency.locations.enabled>
+		<sonar.exclusions>com/cisco/cjp/org/management/config/SwaggerConfig.java</sonar.exclusions>
 	</properties>
-
+	
+	
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
