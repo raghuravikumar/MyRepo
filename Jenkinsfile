@@ -19,6 +19,13 @@ node{
                     }
                 }
             }
+            stage('sonar-analysis') {
+                for (project in utProjects) {
+                    dir(project) {
+                        sh "'${mavenHome}/bin/mvn' sonar:sonar"
+                    }
+                }
+            }
         }
     
 }
