@@ -15,9 +15,17 @@ node{
     
     stage('analysis'){
         
-        sh "mvn -f -X org-management/pom.xml clean package checkstyle:checkstyle findbugs:findbugs cobertura:cobertura "
+        sh "mvn -f org-management/pom.xml clean package checkstyle:checkstyle findbugs:findbugs cobertura:cobertura "
         
     }
+    
+    stage('SonarQube analysis') {
+    withSonarQubeEnv('My SonarQube Server Local') {
+      // requires SonarQube Scanner for Maven 3.2+
+      sh 'mvn -f org-management/pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+    }
+  } 
+
     
     step([$class: 'hudson.plugins.checkstyle.CheckStylePublisher', pattern: '**/target/checkstyle-result.xml', unstableTotalAll:'0',unhealthy:'100', healthy:'100'])
     step([$class: 'FindBugsPublisher', pattern: '**/findbugsXml.xml'])
