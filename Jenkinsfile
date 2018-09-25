@@ -3,7 +3,7 @@ node{
     // Wipe the workspace so we are building completely clean
     deleteDir()
     def mavenHome
-        def utProjects = ["org-management","user-management"]
+        def utProjects = ["org-management"]
         stage('Preparation') {
             checkout scm
             mavenHome = tool(name: 'maven', type: 'maven');
