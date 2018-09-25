@@ -2,26 +2,23 @@ node{
     
     // Wipe the workspace so we are building completely clean
     deleteDir()
-    stage('scm checkout'){
-        
-        git 'https://github.com/raghuravikumar/MyRepo.git'
-    }
-    
-    stage('compile-package'){
-        
-        sh 'mvn -f org-management/pom.xml package'
-        
-    }
-    
-    
-    stage('SonarQube analysis') {
-    withSonarQubeEnv('My SonarQube Server') {
-      // requires SonarQube Scanner for Maven 3.2+
-      sh 'mvn -f org-management/pom.xml org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
-    }
-  } 
-
-    
-    
+    def mavenHome
+        def utProjects = ["org-management","user-management"]
+        stage('Preparation') {
+            checkout scm
+            mavenHome = tool(name: 'maven-3.5.0', type: 'maven');
+        }
+        withEnv([
+                'MAVEN_HOME=' + mavenHome,
+                "PATH=${mavenHome}/bin:${env.PATH}"
+        ]) {
+            stage('compile-package') {
+                for (project in utProjects) {
+                    dir(project) {
+                        sh "'${mavenHome}/bin/mvn' clean test"
+                    }
+                }
+            }
+        }
     
 }
