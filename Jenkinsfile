@@ -6,7 +6,7 @@ node{
         def utProjects = ["org-management","user-management"]
         stage('Preparation') {
             checkout scm
-            mavenHome = tool(name: 'maven-3.5.4', type: 'maven');
+            mavenHome = tool(name: 'maven', type: 'maven');
         }
         withEnv([
                 'MAVEN_HOME=' + mavenHome,
