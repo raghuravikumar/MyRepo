@@ -19,7 +19,7 @@ node{
                     }
                 }
             }
-             stage('SonarQube analysis') {
+             /*stage('SonarQube analysis') {
                     withSonarQubeEnv('My SonarQube Server') {
                     for (project in utProjects) {
                     dir(project) {
@@ -27,12 +27,12 @@ node{
                         }
                      }
                 }
-            } 
+            } */
             
         }
     
 }
-stage("Quality Gate"){
+/*stage("Quality Gate"){
           timeout(time: 5, unit: 'MINUTES') {
               def qg = waitForQualityGate()
               if (qg.status != 'OK') {
@@ -40,3 +40,4 @@ stage("Quality Gate"){
               }
           }
             }
+*/
