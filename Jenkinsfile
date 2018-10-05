@@ -41,7 +41,7 @@ node{
            jenkinsBasePath: '',
            fileIncludePattern: '',
            fileExcludePattern: '',
-           jsonReportDirectory: 'ft-reports',
+           jsonReportDirectory: 'target',
            ignoreFailedTests: true,
            missingFails: false,
            pendingFails: false,
