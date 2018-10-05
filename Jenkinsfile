@@ -25,6 +25,12 @@ node{
                         sh "'${mavenHome}/bin/mvn' clean verify"
                     }
                 }
+                post {
+        always {
+            cucumber '**/*.json'
+        }
+    }
+                
             }
              /*stage('SonarQube analysis') {
                     withSonarQubeEnv('My SonarQube Server') {
@@ -37,11 +43,7 @@ node{
             } */
             
         }
-    post {
-        always {
-            cucumber '**/*.json'
-        }
-    }
+    
     
 }
 /*stage("Quality Gate"){
