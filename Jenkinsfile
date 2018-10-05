@@ -37,17 +37,11 @@ node{
             } */
             
         }
-    step([$class: 'CucumberReportPublisher',
-           jenkinsBasePath: '',
-           fileIncludePattern: '',
-           fileExcludePattern: '',
-           jsonReportDirectory: '',
-           ignoreFailedTests: true,
-           missingFails: false,
-           pendingFails: false,
-           skippedFails: false,
-           undefinedFails: false,
-           parallelTesting: false])
+    post {
+        always {
+            cucumber '**/*.json'
+        }
+    }
     
 }
 /*stage("Quality Gate"){
