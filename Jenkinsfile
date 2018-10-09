@@ -23,10 +23,7 @@ node{
                 for (project in utProjects) {
                     dir(project) {
                         sh "'${mavenHome}/bin/mvn' clean verify"
-                    }
-                }
-            }
-            step([$class: 'CucumberReportPublisher',
+                        step([$class: 'CucumberReportPublisher',
            jenkinsBasePath: '',
            fileIncludePattern: '',
            fileExcludePattern: '',
@@ -37,6 +34,10 @@ node{
            skippedFails: false,
            undefinedFails: false,
            parallelTesting: false])
+                    }
+                }
+            }
+
                 
             }
              /*stage('SonarQube analysis') {
