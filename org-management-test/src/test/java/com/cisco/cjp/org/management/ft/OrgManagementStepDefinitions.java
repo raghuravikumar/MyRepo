@@ -122,7 +122,7 @@ public class OrgManagementStepDefinitions extends OrgControllerTest {
 
 		assertThat(response.getStatusCode().value(), is(HttpStatus.OK.value()));
 
-		String expected = "{\"orgId\":\"transera1\",\"timeZone\":\"Africa\",\"description\":\"Cisco\",\"licenceType\":\"Premium\"}";
+		String expected = "{\"orgId\":\"transera\",\"timeZone\":\"Africa\",\"description\":\"Cisco\",\"licenceType\":\"Premium\"}";
 
 		JSONAssert.assertEquals(expected, response.getBody(), true);
 	}
