@@ -26,6 +26,12 @@ node{
                     }
                 }
             }
+            post {
+                always {
+                    //generate cucumber reports
+                    cucumber '**/*.json'
+                }
+            }
                 
             }
              /*stage('SonarQube analysis') {
