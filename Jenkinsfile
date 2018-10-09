@@ -22,7 +22,7 @@ node{
             stage('cucumber reporting') {
                 for (project in utProjects) {
                     dir(project) {
-                        steps{
+                        step{
                         sh "'${mavenHome}/bin/mvn' clean verify"
                         }
                         post {
