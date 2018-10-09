@@ -26,6 +26,12 @@ node{
                     }
                 }
     }
+             post {
+                always {
+                    //generate cucumber reports
+                    cucumber '**/*.json'
+                }
+            }
                 
             }
              /*stage('SonarQube analysis') {
@@ -40,7 +46,7 @@ node{
             
         }
 
-step([$class: 'CucumberReportPublisher',
+/*step([$class: 'CucumberReportPublisher',
            jenkinsBasePath: '',
            fileIncludePattern: '',
            fileExcludePattern: '',
@@ -50,7 +56,7 @@ step([$class: 'CucumberReportPublisher',
            pendingFails: false,
            skippedFails: false,
            undefinedFails: false,
-           parallelTesting: false])
+           parallelTesting: false])*/
     
     
 }
