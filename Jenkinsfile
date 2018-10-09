@@ -25,7 +25,7 @@ node{
                         sh "'${mavenHome}/bin/mvn' clean verify"
                     }
                 }
-    }
+            }
                 
             }
              /*stage('SonarQube analysis') {
@@ -50,16 +50,12 @@ node{
            pendingFails: false,
            skippedFails: false,
            undefinedFails: false,
-           parallelTesting: false])*/
-    
-    
-}
-/*stage("Quality Gate"){
-          timeout(time: 5, unit: 'MINUTES') {
-              def qg = waitForQualityGate()
-              if (qg.status != 'OK') {
-                  error "Pipeline aborted due to quality gate failure: ${qg.status}"
-              }
-          }
-            }
-*/
+           parallelTesting: false])
+           
+ */
+
+/*
+ * stage("Quality Gate"){ timeout(time: 5, unit: 'MINUTES') { def qg =
+ * waitForQualityGate() if (qg.status != 'OK') { error
+ * "Pipeline aborted due to quality gate failure: ${qg.status}" } } }
+ */
