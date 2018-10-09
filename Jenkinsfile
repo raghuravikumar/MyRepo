@@ -22,14 +22,21 @@ node{
             stage('cucumber reporting') {
                 for (project in utProjects) {
                     dir(project) {
-                        
                         sh "'${mavenHome}/bin/mvn' clean verify"
-                       
-                        
                     }
                 }
             }
-            
+            step([$class: 'CucumberReportPublisher',
+           jenkinsBasePath: '',
+           fileIncludePattern: '',
+           fileExcludePattern: '',
+           jsonReportDirectory: '',
+           ignoreFailedTests: true,
+           missingFails: false,
+           pendingFails: false,
+           skippedFails: false,
+           undefinedFails: false,
+           parallelTesting: false])
                 
             }
              /*stage('SonarQube analysis') {
@@ -58,8 +65,3 @@ node{
            
  */
 
-/*
- * stage("Quality Gate"){ timeout(time: 5, unit: 'MINUTES') { def qg =
- * waitForQualityGate() if (qg.status != 'OK') { error
- * "Pipeline aborted due to quality gate failure: ${qg.status}" } } }
- */
