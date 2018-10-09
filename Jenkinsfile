@@ -22,15 +22,9 @@ node{
             stage('cucumber reporting') {
                 for (project in utProjects) {
                     dir(project) {
-                        step{
+                        
                         sh "'${mavenHome}/bin/mvn' clean verify"
-                        }
-                        post {
-                always {
-                    //generate cucumber reports
-                    cucumber '**/*.json'
-                }
-            }
+                       
                         
                     }
                 }
