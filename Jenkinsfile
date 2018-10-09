@@ -22,16 +22,20 @@ node{
             stage('cucumber reporting') {
                 for (project in utProjects) {
                     dir(project) {
+                        steps{
                         sh "'${mavenHome}/bin/mvn' clean verify"
-                    }
-                }
-            }
-            post {
+                        }
+                        post {
                 always {
                     //generate cucumber reports
                     cucumber '**/*.json'
                 }
             }
+                        
+                    }
+                }
+            }
+            
                 
             }
              /*stage('SonarQube analysis') {
